@@ -1,0 +1,74 @@
+.tourist-places-container {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px 20px;
+    overflow-x: hidden;
+  }
+  
+  .section-title {
+    font-size: clamp(2rem, 4vw, 2.5rem) !important;
+    color: #d41528 !important;
+    text-align: center !important;
+    margin-bottom: 32px !important;
+  }
+  
+  .card {
+    height: 100% !important;
+    transition: transform 0.3s ease !important;
+    cursor: pointer !important;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1) !important;
+  }
+  
+  .card-media {
+    height: 250px !important;
+    object-fit: cover !important;
+  }
+  
+  .card-title {
+    font-size: clamp(1.2rem, 2vw, 1.5rem) !important;
+    color: #34495e !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .card-description {
+    color: #7f8c8d !important;
+    font-size: clamp(0.9rem, 1.5vw, 1rem) !important;
+    line-height: 1.6 !important;
+  }
+  
+  .location-text {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-bottom: 8px !important;
+    color: #666 !important;
+  }
+  
+  .price-text {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+    color: #27ae60 !important;
+    font-weight: 500 !important;
+  }
+  
+  .divider {
+    margin: 48px 0 !important;
+    background-color: #eee !important;
+  }
+  
+  @media (max-width: 600px) {
+    .tourist-places-container {
+      padding: 24px 16px;
+    }
+    
+    .card-media {
+      height: 200px !important;
+    }
+  }
+  
